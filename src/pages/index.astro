@@ -5,24 +5,8 @@ import Card from "../components/Card.astro";
 
 <Layout title="JEAN FONSECA | SOFTWARE ENGINEER">
 	<main class="container py-12 lg:py-24">
-		<!-- Header / Nav area -->
-		<div class="flex justify-end items-center mb-12 px-2 animate-fade-in">
-			<nav
-				class="hidden md:flex gap-8 text-[10px] font-bold tracking-[0.2em] text-zinc-500 items-center"
-			>
-				<a href="#" class="hover:text-white transition-colors">INÍCIO</a
-				>
-				<a
-					href="/Profile.pdf"
-					download
-					class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-white hover:bg-white hover:text-black transition-all"
-					>DOWNLOAD CV</a
-				>
-			</nav>
-		</div>
-
 		<div
-			class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-9 gap-6 min-h-[1200px]"
+			class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-6 gap-6"
 		>
 			<!-- Hero Section -->
 			<Card
@@ -99,8 +83,8 @@ import Card from "../components/Card.astro";
 						Rio de Janeiro, Brasil
 					</p>
 
-					<!-- Social Icons Integrated -->
-					<div class="flex gap-4 items-center justify-center">
+					<!-- Social Icons -->
+					<div class="flex gap-4 items-center justify-center mb-8">
 						<a
 							href="https://github.com/jeanfonsecaaquino"
 							target="_blank"
@@ -169,6 +153,27 @@ import Card from "../components/Card.astro";
 							</svg>
 						</a>
 					</div>
+
+					<!-- Stats Mini -->
+					<div class="grid grid-cols-2 gap-4 w-full mb-8 border-y border-white/5 py-6">
+						<div class="text-center">
+							<p class="text-2xl font-black text-white leading-none">12</p>
+							<p class="text-[8px] font-bold text-zinc-500 uppercase tracking-widest mt-1">Anos Exp.</p>
+						</div>
+						<div class="text-center border-l border-white/5">
+							<p class="text-2xl font-black text-white leading-none">50+</p>
+							<p class="text-[8px] font-bold text-zinc-500 uppercase tracking-widest mt-1">Entregas</p>
+						</div>
+					</div>
+
+					<!-- CV Download -->
+					<a
+						href="/Profile.pdf"
+						download
+						class="w-full py-4 bg-white/5 border border-white/10 rounded-2xl text-[10px] font-bold text-white hover:bg-white hover:text-black transition-all tracking-[0.2em] uppercase"
+					>
+						Download CV
+					</a>
 				</div>
 			</Card>
 
@@ -197,7 +202,7 @@ import Card from "../components/Card.astro";
 
 			<!-- Backend Stack -->
 			<Card
-				className="md:col-span-2 md:row-span-1 order-6 md:col-start-3"
+				className="md:col-span-2 md:row-span-1 order-4"
 				title="Backend"
 				delay={0.4}
 			>
@@ -221,7 +226,7 @@ import Card from "../components/Card.astro";
 
 			<!-- Cloud Stack -->
 			<Card
-				className="md:col-span-2 md:row-span-1 order-7 md:col-start-3"
+				className="md:col-span-2 md:row-span-1 order-5"
 				title="Cloud & Infra"
 				delay={0.5}
 			>
@@ -246,39 +251,9 @@ import Card from "../components/Card.astro";
 				</div>
 			</Card>
 
-			<!-- Experience Stats -->
-			<Card
-				className="md:col-span-1 md:row-span-1 flex flex-col justify-center text-center group order-4 md:col-start-1"
-				delay={0.6}
-			>
-				<span
-					class="text-6xl font-black tracking-tighter text-white group-hover:text-neon transition-colors duration-500"
-					>12</span
-				>
-				<span
-					class="text-zinc-500 text-[9px] font-bold uppercase mt-2 tracking-widest"
-					>Anos Exp.</span
-				>
-			</Card>
-
-			<!-- Projects Count -->
-			<Card
-				className="md:col-span-1 md:row-span-1 flex flex-col justify-center text-center group order-5 md:col-start-2"
-				delay={0.7}
-			>
-				<span
-					class="text-6xl font-black tracking-tighter text-white group-hover:text-neon transition-colors duration-500"
-					>50+</span
-				>
-				<span
-					class="text-zinc-500 text-[9px] font-bold uppercase mt-2 tracking-widest"
-					>Entregas</span
-				>
-			</Card>
-
 			<!-- Frontend Stack -->
 			<Card
-				className="md:col-span-2 md:row-span-1 order-8 md:col-start-3"
+				className="md:col-span-2 md:row-span-1 order-6"
 				title="Frontend"
 				delay={0.8}
 			>
@@ -297,7 +272,7 @@ import Card from "../components/Card.astro";
 
 			<!-- Data & Messaging -->
 			<Card
-				className="md:col-span-2 md:row-span-1 md:col-start-3 order-9"
+				className="md:col-span-2 md:row-span-1 order-7"
 				title="Data & Messaging"
 				delay={0.9}
 			>
@@ -316,7 +291,7 @@ import Card from "../components/Card.astro";
 
 			<!-- AI & Workflow -->
 			<Card
-				className="md:col-span-2 md:row-span-1 md:col-start-3 order-10"
+				className="md:col-span-2 md:row-span-1 order-8"
 				title="IA & Workflow"
 				delay={1.0}
 			>
