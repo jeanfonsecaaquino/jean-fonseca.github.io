@@ -201,7 +201,9 @@ import Card from "../components/Card.astro";
 				title="Backend"
 				delay={0.4}
 			>
-				<div class="flex flex-wrap gap-2 pt-2">
+				<div
+					class="grid grid-cols-2 gap-3 md:flex md:flex-wrap md:gap-2 pt-2"
+				>
 					{
 						[
 							"Kotlin",
@@ -225,7 +227,9 @@ import Card from "../components/Card.astro";
 				title="Cloud & Infra"
 				delay={0.5}
 			>
-				<div class="flex flex-wrap gap-2 pt-2">
+				<div
+					class="grid grid-cols-2 gap-3 md:flex md:flex-wrap md:gap-2 pt-2"
+				>
 					{
 						[
 							"AWS",
@@ -282,11 +286,13 @@ import Card from "../components/Card.astro";
 				title="Frontend"
 				delay={0.8}
 			>
-				<div class="flex flex-wrap gap-2 pt-2">
+				<div
+					class="grid grid-cols-2 gap-3 md:flex md:flex-wrap md:gap-2 pt-2"
+				>
 					{
 						["Angular", "React", "Vue", "HTML5", "CSS3"].map(
 							(tech) => (
-								<span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold tracking-widest text-zinc-400 hover:text-neon hover:border-neon/30 transition-all cursor-default uppercase">
+								<span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold tracking-widest text-zinc-400 hover:text-neon hover:border-neon/30 transition-all cursor-default uppercase text-center">
 									{tech}
 								</span>
 							)
@@ -301,11 +307,13 @@ import Card from "../components/Card.astro";
 				title="Data & Messaging"
 				delay={0.9}
 			>
-				<div class="flex flex-wrap gap-2 pt-2">
+				<div
+					class="grid grid-cols-2 gap-3 md:flex md:flex-wrap md:gap-2 pt-2"
+				>
 					{
 						["PostgreSQL", "MongoDB", "MySQL", "QLDB", "Kafka"].map(
 							(tech) => (
-								<span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold tracking-widest text-zinc-400 hover:text-neon hover:border-neon/30 transition-all cursor-default uppercase">
+								<span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold tracking-widest text-zinc-400 hover:text-neon hover:border-neon/30 transition-all cursor-default uppercase text-center">
 									{tech}
 								</span>
 							)
